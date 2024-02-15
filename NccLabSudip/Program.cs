@@ -1,26 +1,46 @@
 ﻿using System;
 
-abstract class vechile
+class rectangle
 {
-    public string brand;
-    public int price;
-    public abstract void display(string brand,int price);
-}
+    public int length;
+    public int breadth;
 
-class Car: vechile
-{
-    public override void display(string brand,int price)
+    public rectangle(int length, int breadth)
     {
-        Console.WriteLine("price of is "+price);
-        Console.WriteLine("name of brand is " + brand);
+        this.length = length;
+        this.breadth = breadth;
+    }
+
+    public object this[int i]
+    {
+        get
+        {
+            if (i == 0)
+                return this.length;
+            else if (i == 1)
+                return this.breadth;
+            else
+                return null;
+        }
+        set
+        {
+            if (i == 0)
+                this.length = (int)value;
+            else if (i == 1)
+                this.breadth = (int)value;
+
+        }
     }
 }
+
 class program
 {
     static void Main(string[] args)
     {
-        Car car1 = new Car();
-        car1.display("maruti", 344444);
-        Console.ReadKey();
+       rectangle rectangle1 = new rectangle(3,5);
+        rectangle1[0] = 9;
+        rectangle1[1] = 8;
+        Console.WriteLine("length is " + rectangle1[0] + " breadth is " + rectangle1[1]);
+        Console.ReadLine(); 
     }
 }
