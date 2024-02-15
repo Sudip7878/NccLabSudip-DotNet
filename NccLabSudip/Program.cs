@@ -1,28 +1,26 @@
 ﻿using System;
 
-struct animal
+abstract class vechile
 {
-    public string color;
-    public int age;
+    public string brand;
+    public int price;
+    public abstract void display(string brand,int price);
+}
 
-    public animal(string color1,int age1)
+class Car: vechile
+{
+    public override void display(string brand,int price)
     {
-        color = color1;
-        age = age1;
+        Console.WriteLine("price of is "+price);
+        Console.WriteLine("name of brand is " + brand);
     }
-
-    public void display()
-    {
-        Console.WriteLine("color of animal is "+color+" and age is "+age);
-    }
-
 }
 class program
 {
     static void Main(string[] args)
     {
-        animal cow = new animal("white",9);
-        cow.display();
+        Car car1 = new Car();
+        car1.display("maruti", 344444);
         Console.ReadKey();
     }
 }
