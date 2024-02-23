@@ -1,41 +1,45 @@
 using System;
 
-interface animal
+namespace InterfaceApp
 {
-    void makesound();
-    void eat();
-}
 
-
-interface car
-{
-    void modelname();
-    void price();
-}
-class cow : animal, car
-{
-    public void makesound()
+    interface animal
     {
-        Console.WriteLine("moo moo");
-    }
-    public void eat()
-    {
-        Console.WriteLine("eat grass");
+        void makesound();
+        void eat();
     }
 
-    public void modelname()
+
+    interface car
     {
-        Console.WriteLine("bmw");
+        void modelname();
+        void price();
     }
-    public void price() { Console.WriteLine("2000"); }
-}
-class program
-{
-    static void Main(string[] args)
+    class cow : animal, car
     {
-        cow cow = new cow();
-        cow.makesound();
-        cow.price();
-        Console.ReadLine();
+        public void makesound()
+        {
+            Console.WriteLine("moo moo");
+        }
+        public void eat()
+        {
+            Console.WriteLine("eat grass");
+        }
+
+        public void modelname()
+        {
+            Console.WriteLine("bmw");
+        }
+        public void price() { Console.WriteLine("2000"); }
+    }
+    class program
+    {
+        static void Main(string[] args)
+        {
+            cow cow = new cow();
+            cow.makesound();
+            cow.price();
+            Console.ReadLine();
+        }
     }
 }
