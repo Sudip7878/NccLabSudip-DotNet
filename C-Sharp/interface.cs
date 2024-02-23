@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 interface animal
 {
@@ -14,10 +14,12 @@ interface car
 }
 class cow : animal, car
 {
-    public void makesound() {
+    public void makesound()
+    {
         Console.WriteLine("moo moo");
     }
-    public void eat() {
+    public void eat()
+    {
         Console.WriteLine("eat grass");
     }
 
