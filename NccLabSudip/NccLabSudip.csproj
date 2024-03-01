@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="default constructor.cs" />
     <Compile Include="sustemio.cs" />
     <Compile Include="parameterized constructor.cs" />
     <Compile Include="Program.cs" />
