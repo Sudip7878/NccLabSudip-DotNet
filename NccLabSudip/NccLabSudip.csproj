@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="copy constructor.cs" />
+    <Compile Include="indexer.cs" />
+    <Compile Include="inheritance.cs" />
+    <Compile Include="method overloading.cs" />
+    <Compile Include="properties.cs" />
+    <Compile Include="static construcotor.cs" />
     <Compile Include="default constructor.cs" />
     <Compile Include="sustemio.cs" />
     <Compile Include="parameterized constructor.cs" />
