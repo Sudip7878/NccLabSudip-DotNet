@@ -44,13 +44,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractClass.cs" />
+    <Compile Include="Basekeyword.cs" />
     <Compile Include="copy constructor.cs" />
+    <Compile Include="delegate.cs" />
+    <Compile Include="event.cs" />
+    <Compile Include="GenericClass.cs" />
+    <Compile Include="GenericClassForMultipleParameter.cs" />
+    <Compile Include="genericMethod.cs" />
     <Compile Include="indexer.cs" />
     <Compile Include="inheritance.cs" />
+    <Compile Include="interface.cs" />
     <Compile Include="method overloading.cs" />
+    <Compile Include="methodHidding.cs" />
+    <Compile Include="methodOverride.cs" />
+    <Compile Include="multicastDelegate.cs" />
+    <Compile Include="partialClass.cs" />
     <Compile Include="properties.cs" />
     <Compile Include="static construcotor.cs" />
     <Compile Include="default constructor.cs" />
+    <Compile Include="Struct.cs" />
     <Compile Include="sustemio.cs" />
     <Compile Include="parameterized constructor.cs" />
     <Compile Include="Program.cs" />
