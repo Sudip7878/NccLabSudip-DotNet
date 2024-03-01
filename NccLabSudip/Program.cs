@@ -1,39 +1,24 @@
 ﻿using System;
-
-interface animal
+namespace NccLabSudip
 {
-    void makesound();
-    void eat();
-}
-
-
-interface car
-{
-    void modelname();
-    void price();
-}
-class cow : animal, car
-{
-    public void makesound() {
-        Console.WriteLine("moo moo");
-    }
-    public void eat() {
-        Console.WriteLine("eat grass");
-    }
-
-    public void modelname()
+    public delegate void mydelegate(string msg);
+    class greet
     {
-        Console.WriteLine("bmw");
+        public void sayhello(string msg)
+        {
+            Console.WriteLine(msg);
+        }
     }
-    public void price() { Console.WriteLine("2000"); }
-}
-class program
-{
-    static void Main(string[] args)
+
+    class program
     {
-        cow cow = new cow();
-        cow.makesound();
-        cow.price();
-        Console.ReadLine();
+        static void Main(string[] args)
+        {
+            greet gt = new greet();
+            mydelegate delegate1 = new mydelegate(gt.sayhello);
+            //mydelegate delegate1 = gt.sayhello;
+            delegate1("hello iam inside delegate");
+            Console.ReadLine();
+        }
     }
 }
