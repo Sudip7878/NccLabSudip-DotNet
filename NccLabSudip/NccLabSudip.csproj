@@ -55,6 +55,7 @@
     <Compile Include="indexer.cs" />
     <Compile Include="inheritance.cs" />
     <Compile Include="interface.cs" />
+    <Compile Include="linq.cs" />
     <Compile Include="method overloading.cs" />
     <Compile Include="methodHidding.cs" />
     <Compile Include="methodOverride.cs" />
